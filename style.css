@@ -1,0 +1,32 @@
+/* style.css - estilos finos para el prototipo */
+
+/* Mantener el fondo suave */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Encabezado */
+header {
+  background-image: linear-gradient(180deg, rgba(255,255,255,1), rgba(250,250,250,1));
+}
+
+/* Cards: sombra suave y borde redondeado extra */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(20,20,30,0.06);
+}
+
+/* Hacer que las imágenes en las cards queden con borde superior redondeado */
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Ajustes responsivos menores */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 160px;
+  }
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscador de Recetas — Gourmet Go</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light">
+
+  <!-- Header / Hero -->
+  <header class="py-5 bg-white shadow-sm">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">Buscador de Recetas</h1>
+      <p class="lead text-muted mb-4">Encuentra recetas por ingrediente, estilo o plato. ¡Inspírate y cocina!</p>
+
+      <!-- Formulario de búsqueda (HU-01) -->
+      <form id="searchForm" class="row g-2 align-items-center" role="search" action="#" method="GET">
+        <div class="col-12 col-md-8">
+          <label for="q" class="visually-hidden">Buscar por ingrediente</label>
+          <input id="q" name="q" type="search" class="form-control form-control-lg" placeholder="Busca por ingrediente...">
+        </div>
+        <div class="col-12 col-md-4 d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <!-- Resultados de ejemplo (HU-02) -->
+  <main class="container my-5">
+    <section id="results" aria-label="Resultados de recetas">
+      <h2 class="h4 mb-4">Recetas destacadas</h2>
+
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1512058564366-c9e3b3b6d6d7?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Ensalada fresca">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ensalada fresca de quinoa</h5>
+              <p class="card-text text-muted small mb-3">Quinoa, tomate cherry, aguacate y limón.</p>
+              <a href="#" class="mt-auto btn btn-primary">Ver receta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Pasta casera">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pasta cremosa con champiñones</h5>
+              <p class="card-text text-muted small mb-3">Penne, champiñones salteados y crema aromática.</p>
+              <a href="#" class="mt-auto btn btn-primary">Ver receta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Sopa">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sopa thai de coco y pollo</h5>
+              <p class="card-text text-muted small mb-3">Sabores cítricos y picantes con leche de coco.</p>
+              <a href="#" class="mt-auto btn btn-primary">Ver receta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 (opcional, puedes quitar si quieres 3) -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1543353071-087092ec3930?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Tostadas">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tostadas de aguacate y huevo</h5>
+              <p class="card-text text-muted small mb-3">Rápido, nutritivo y delicioso para el desayuno.</p>
+              <a href="#" class="mt-auto btn btn-primary">Ver receta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Postre">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Brownie de chocolate</h5>
+              <p class="card-text text-muted small mb-3">Brownie húmedo con trozos de chocolate.</p>
+              <a href="#" class="mt-auto btn btn-primary">Ver receta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Sándwich">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sándwich mediterráneo</h5>
+              <p class="card-text text-muted small mb-3">Pan artesanal, hummus y vegetales asados.</p>
+              <a href="#" class="mt-auto btn btn-primary">Ver receta</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 bg-white border-top">
+    <div class="container text-center text-muted small">
+      © Gourmet Go — Prototipo visual Sprint 1
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (opcional para algunos componentes) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- App JS (vacío / preparado para Sprint 2) -->
+  <script src="app.js"></script>
+</body>
+</html>
